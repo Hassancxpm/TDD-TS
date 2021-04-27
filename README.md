@@ -1,5 +1,13 @@
-# TDD-TS-Boilerplate
+# Installation
 
-## Clone this repo
+1. Clone the repo
 
-## npm install
+   ```sh
+   git clone https://github.com/Hassancxpm/TDD-TS-Boilerplate.git
+   ```
+
+2. Install NPM packages
+
+   ```sh
+   npm install
+   ```
