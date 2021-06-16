@@ -1,11 +1,15 @@
 class Calc {
 
   add(a: number, b: number): number {
-    return a + b;
+    return a + b
   }
   mutliply(a: number, b: number): number {
-    return a * b;
+    return a * b
   }
+  subtract(a: number, b: number): number {
+    return a - b
+  }
+
 }
 
-export default new Calc();
+export default new Calc()
