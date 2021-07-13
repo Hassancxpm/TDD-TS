@@ -1,6 +1,6 @@
 class fizzBuzz {
 
-  evaluate (num: number) {
+  public evaluate (num: number) {
     return num === 0 ? "0"
       : this.isMultipleOf(num, 3*5) ? "FizzBuzz"
       : this.isMultipleOf(num, 5) ? "Buzz"
