@@ -22,7 +22,7 @@ describe("FizzBuzz", () => {
     ${6}  | ${"Fizz"}
     ${9}  | ${"Fizz"}
     ${99} | ${"Fizz"}
-  `("should return $result if we pass $num", ({ num, result }) => {
+    `("should return $result if we pass $num", ({ num, result }) => {
         expect(fizzBuzz.evaluate(num)).toEqual(result)
     })
 
@@ -44,7 +44,7 @@ describe("FizzBuzz", () => {
     ${4}  | ${"4"}
     ${7}  | ${"7"}
     ${98} | ${"98"}
-  `("should return $result if we pass $num", ({ num, result }) => {
+    `("should return $result if we pass $num", ({ num, result }) => {
         expect(fizzBuzz.evaluate(num)).toEqual(result)
     })
 
