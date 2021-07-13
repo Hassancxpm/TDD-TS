@@ -2,13 +2,13 @@ class fizzBuzz {
 
   evaluate (num: number) {
     return num === 0 ? "0"
-    : this.isMultipleOf(3 * 5, num) ? "FizzBuzz"
-    : this.isMultipleOf(5, num) ? "Buzz"
-    : this.isMultipleOf(3, num) ? "Fizz"
-    : num + ""
+      : this.isMultipleOf(num, 3*5) ? "FizzBuzz"
+      : this.isMultipleOf(num, 5) ? "Buzz"
+      : this.isMultipleOf(num, 3) ? "Fizz"
+      : num + ""
   }
 
-  private isMultipleOf (divisor: number, num: number): boolean {
+  private isMultipleOf(num: number, divisor: number): boolean {
     return num % divisor === 0
   }
 
