@@ -36,7 +36,6 @@ describe("FizzBuzz", () => {
         expect(fizzBuzz.evaluate(num)).toEqual(result)
     })
 
-
     it.each`
     num   | result
     ${1}  | ${"1"}
