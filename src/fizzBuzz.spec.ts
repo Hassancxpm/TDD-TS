@@ -32,9 +32,12 @@ describe("FizzBuzz", () => {
         expect(fizzBuzz.evaluate(num)).toEqual(result)
     })
 
+    test("should return '0' if we pass 0", () => {
+        expect(fizzBuzz.evaluate(0)).toEqual("0")
+    })
+
     it.each`
     num   | result
-    ${0}  | ${"0"}
     ${1}  | ${"1"}
     ${2}  | ${"2"}
     ${4}  | ${"4"}
