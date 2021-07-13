@@ -2,6 +2,10 @@ import fizzBuzz from "./fizzBuzz"
 
 describe("FizzBuzz", () => {
 
+    test("should return '0' if we pass 0", () => {
+        expect(fizzBuzz.evaluate(0)).toEqual("0")
+    })
+
     it.each`
     num    | result
     ${15}  | ${"FizzBuzz"}
@@ -19,7 +23,7 @@ describe("FizzBuzz", () => {
     ${9}  | ${"Fizz"}
     ${99} | ${"Fizz"}
   `("should return $result if we pass $num", ({ num, result }) => {
-      expect(fizzBuzz.evaluate(num)).toEqual(result)
+        expect(fizzBuzz.evaluate(num)).toEqual(result)
     })
 
     it.each`
@@ -32,9 +36,6 @@ describe("FizzBuzz", () => {
         expect(fizzBuzz.evaluate(num)).toEqual(result)
     })
 
-    test("should return '0' if we pass 0", () => {
-        expect(fizzBuzz.evaluate(0)).toEqual("0")
-    })
 
     it.each`
     num   | result
