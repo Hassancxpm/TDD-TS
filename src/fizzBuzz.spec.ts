@@ -1,5 +1,4 @@
 import fizzBuzz from "./fizzBuzz"
-import { fizzbuzzResult } from "./type.fizzbuzz"
 
 describe("FizzBuzz", () => {
   const cases = [
