@@ -16,8 +16,8 @@ describe("FizzBuzz", () => {
 
   it.each(cases)(
     "should return %p if we pass %p",
-    (firstCase, expectedResult) => {
-      expect(fizzBuzz.evaluate(firstCase as number)).toEqual(expectedResult)
+    (testCase, expectedResult) => {
+      expect(fizzBuzz.evaluate(testCase as number)).toEqual(expectedResult)
     }
   )
 })

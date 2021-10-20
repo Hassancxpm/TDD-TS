@@ -22,4 +22,4 @@ class fizzBuzz {
   }
 }
 
-export default new fizzBuzz()
+export default new fizzBuzz
